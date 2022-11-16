@@ -1,0 +1,26 @@
+<div class="content">
+
+    <div ng-controller="myappcontroller">
+        <button ng-click="order='name'">Orderd By Name</button>
+        <button ng-click="order='rating'">Orderd By Ratings</button>
+        <input type="text" ng-model="srch">
+        <ul >
+            <li ng-repeat="movie in movies | orderBy:order| filter:srch" ng-show="movie.available">
+                <img ng-src="{{movie.pic}}" style="margin: -12px 10px 0 0; float: left; width: 50px; height: 50px;"
+                ng-show="movie.pic">
+               <h3> {{movie.name | uppercase}} -> {{movie.ticket_price}}</h3>
+               <div class="remove" ng-click="removedata(movies)">X</div>
+               <span>{{movie.rating}}</span>
+            </li>
+        </ul>
+        <form ng-submit="addMovie()">
+            <input type="text" placeholder="name" ng-model="movie.name">
+            
+            <input type="number" placeholder="rating" ng-model="movie.rating">
+            
+            <input type="number" placeholder="price" ng-model="movie.price">
+            <input type="submit">
+        </form>
+        
+    </div>
+</div>

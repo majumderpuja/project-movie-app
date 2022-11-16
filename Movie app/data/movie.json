@@ -1,0 +1,30 @@
+[
+    {
+      "name": "KGF2",
+      "rating": 8.5,
+      "ticket_price": 280,
+      "available": true,
+      "pic": "content/img/kgf2.jpg"
+    },
+    {
+      "name": "HRIDAYAM",
+      "rating": 8,
+      "ticket_price": 350,
+      "available": true,
+      "pic": "content/img/hridayam.jpg"
+    },
+    {
+      "name": "PUSHPA",
+      "rating": 7,
+      "ticket_price": 200,
+      "available": true,
+      "pic": "content/img/pushpa.jpg"
+    },
+    {
+      "name": "War",
+      "rating": 10,
+      "ticket_price": 500,
+      "available": true,
+      "pic": "content/img/war.jpg"
+    }
+]
